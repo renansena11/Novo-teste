@@ -3,8 +3,8 @@ import React from 'react';
 // Aqui está minha navbar estiliza no bootstrap
 
 
-function Menu(){
-    return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
+function Menu(){ {/*fix-top a navbar fica fixa no topo */}
+    return <nav className="navbar fix-top navbar-expand-md navbar-dark">
 
     <div className="container">
             

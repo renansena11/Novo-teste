@@ -1,13 +1,14 @@
 h1, h2, h3, h4, h5{
-    line-height: 1.5;
+    line-height: 1.5; /*altura da linha do texto que eles ocupam*/
 }
 
 p{
-    color: #8b8b8b;
+    color: #bebaba;
 }
 
 /* ------------------------------NAVBAR---------------------- */
 
+/*em css . a gente customiza uma classse e o # customiza o nome (id)*/
 .navbar{
     background-color: #0d6efd;
 }
@@ -15,6 +16,7 @@ p{
 /*texto dentro do meu seach*/
 .btn-seach{    
     color: #0d6efd;
+    
 }
 /*texto quando passa o mouse por cima do meu seach*/
 .btn-light:hover{
@@ -26,6 +28,7 @@ p{
 /*texto dentro das divisões*/
 .btn-div{    
     color: white;
+    
 }
 
 
@@ -37,6 +40,7 @@ p{
 .navbar-brand{
     padding-top:.3125rem;
     padding-bottom:.3125rem;
+   
     margin-right:2rem;
     margin-left:0rem;
 }
@@ -45,61 +49,89 @@ p{
 /* ------------------------BANNER -------------------------*/
 
 #banner{
-    background-color: #b13f15;
-    color: #ffffff;
-    padding: 100px 0 70px 0;
+    background-color: #ffffff;
+    color: #000000c5; /*cor do texto*/
+    padding: 150px 0 70px 0; /*espaçamentos (top, right, button, left)*/
 }
 
-#banner img{
-    width: 100%;
+#banner img{  /*dentro de banner, todo o componente imagem, será customizado*/
+    
+    width: 10%;
+    border-radius: 50%;
+    height: 500px; /*altura da imagem*/
+    margin: 0px;
+    padding: 0% 0% 0% 0%; /* ate consigo reenquadrar a img, mas será que é assim mesmo?*/
 }
 
-.btn-banner{
-    margin: 8% 3% 5% 0;
+
+.btn-banner{ /*aqui vamos espaçar os botões um do outro e com relação aos textos*/
+    margin: 5% 5% 5% 0;
+}
+
+#banner h4{ /*dentro de banner, estou mudando apenas h4*/
+    color: #737373;
+}
+
+.icon-banner {
+    color: #0d6efd;
+    margin-top: 15px;
+    margin-bottom: 15px; /*espaçamento do icone até o texto*/
 }
 
 /* FEATURES */
 
 #features{
     padding: 7% 5%;
+    background-color: #ffec9f;
 }
 
 .feature-box{
     text-align: center;
-    padding: 5%;
+    padding: 5%; /*espaçamento entre itens das 3 colunas*/
 }
 
-.icon{
-    color: #0d6efd;
-    margin-bottom: 15px;
+.icon{ /*vai estilizar os icones*/
+    color: #000000;
+    margin-bottom: 15px; /*espaçamento do icone até o texto*/
+}
+
+#features h3{ /*dentro de banner, estou mudando apenas h4*/
+    color: #737373;
+}
+
+#features p{ /*dentro de banner, estou mudando apenas h4*/
+    color: #000000;
 }
 
 
 /* TESTEMUNHOS */
 
 #testemunho{
-    background-color: #f3f3f3;
-    color: #323338;
-    padding: 7% 15%;
+    background-color: #0033ff;
+    color: #ff0000;
+    padding: 2% 2%;
     text-align: center;
-}
+    }
 
 #testemunho img {
     border-radius: 50%;
     width: 10%;
+    height: 300px; /*altura da imagem*/
     margin: 20px;
+    padding: 0% 35% 0% 35%; /* ate consigo reenquadrar a img, mas será que é assim mesmo?*/
 }
 
 
 /* PRECOS */
 
-#preco .titulo{
+#preco .titulo{ /*dentro da classe preço, mudou apenas a classe titulo*/
     margin-top: 5%;
 }
 
 #preco{
+    background-color: #b49e26;
     padding: 5% 15% 8%;
-    color: #323338;
+    color: #020f54;
 }
 
 
@@ -108,7 +140,7 @@ p{
 #footer{
     padding: 3% 15%;
     text-align: center;
-    background-color: #f3f3f3;
+    background-color: #943333;
 }
 
 
