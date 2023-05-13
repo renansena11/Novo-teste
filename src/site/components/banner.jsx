@@ -9,8 +9,8 @@ function Banner() {
                     <h1>Uma plataforma para gerenciar e monitorar seus projetos em tempo real !</h1>
                     <i class="icon-banner fas fa-layer-group fa-5x"></i> {/*logo de globo*/}
                     <h4>Gerencie em apenas um lugar</h4>
-                    <button type="button" className="btn btn-outline-dark btn-lg btn-banner">Fazer Login</button>
-                    <button type="button" className="btn btn-outline-info btn-lg btn-banner">Criar uma Conta</button>
+                    <a href="/login" className="btn btn-outline-dark btn-lg btn-banner">Fazer Login</a>
+                    <a href="#" className="btn btn-outline-info btn-lg btn-banner">Criar uma Conta</a>
                 </div>
                 <div className="col-lg-6"> {/*Cirei um carrosel de imagens para apresentar os trabalhos */}
                                         

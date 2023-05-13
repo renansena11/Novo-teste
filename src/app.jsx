@@ -1,14 +1,19 @@
 import React from 'react';
-//import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Site from './site/site';
+import Login from './site/Login/login';
+
 
 function App() {
-    return <div>
-        <Site/>
-        
-    </div>;    
-}
+    return <BrowserRouter>
+        <Routes>
 
+            <Route exact path='/' element={<Site/>} />    
+            <Route exact path='/login' element={<Login/>} />  
+
+        </Routes> 
+    </BrowserRouter>
+    }
 export default App;
 
 /* Paginas 

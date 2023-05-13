@@ -1,0 +1,31 @@
+.form-container{
+
+    height: 100vh; /*altura da view port height*/
+
+}
+
+.form-signin{
+
+    width: 330px;
+    padding: 15px;
+    margin:auto;
+}
+
+.form-signin input[type="email"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.login-links a{
+    text-decoration: none;
+    font-size: 10pt;
+
+
+}
