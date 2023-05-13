@@ -5,7 +5,7 @@ import Site from './site/site';
 function App() {
     return <div>
         <Site/>
-        <h1>Site... 123</h1>
+        
     </div>;    
 }
 

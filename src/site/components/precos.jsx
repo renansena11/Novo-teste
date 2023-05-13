@@ -9,6 +9,7 @@ function Precos() {
                 <div className="titulo">
                     <h1>Planos e Preços</h1>
                     <p>Comece sua avaliação gratuita. Não é necessário cartão de crédito</p>
+                    <br />
                 </div>
             </div> 
 
@@ -18,8 +19,10 @@ function Precos() {
                         <div className="card-header"><h1>Free</h1></div>
                         <div className="card-body">
                             <h2>R$0,00</h2>    
+                            <br />
                             <p>30 dias gratuitos.</p>
                             <p>Sem suporte</p>
+                            <br></br>
                             <button className="btn btn-lg btn-outline-primary">Começar Agora</button>
                         </div>
                     </div>
@@ -30,8 +33,10 @@ function Precos() {
                         <div className="card-header"><h1>Pro</h1></div>
                         <div className="card-body">
                             <h2>R$49,90<small className="text-muted"> /mês</small></h2>    
+                            <br />
                             <p>Monitoramento e planilha organizacional.</p>
                             <p>Suporte em horário comercial</p>
+                            <br />
                             <button className="btn btn-lg btn-outline-primary">Assinar Agora</button>
                         </div>
                     </div>
@@ -42,8 +47,10 @@ function Precos() {
                         <div className="card-header"><h1>Premium</h1></div>
                         <div className="card-body">
                             <h2>R$99,90<small className="text-muted"> /mês</small></h2>    
+                            <br />
                             <p>Todos os recursos.</p>
                             <p>Suporte 24horas</p>
+                            <br/>
                             <button className="btn btn-lg btn-outline-primary">Assinar Agora</button>
                         </div>
                     </div>

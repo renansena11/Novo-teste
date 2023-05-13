@@ -2,6 +2,12 @@ h1, h2, h3, h4, h5{
     line-height: 1.5; /*altura da linha do texto que eles ocupam*/
 }
 
+h6, em{
+    line-height: 1.5; /*altura da linha do texto que eles ocupam*/
+    color:#ffffff
+}
+
+
 p{
     color: #bebaba;
 }
@@ -107,18 +113,26 @@ p{
 /* TESTEMUNHOS */
 
 #testemunho{
-    background-color: #0033ff;
+    background-color: #626262;
     color: #ff0000;
-    padding: 2% 2%;
+    padding: 5% 0% 5% 0%;
     text-align: center;
+
     }
+.carousel-caption{
+    width: 56%;
+    color: rgb(255, 0, 0);
+    padding: 0% 0% 5% 14%;
+
+
+}
 
 #testemunho img {
     border-radius: 50%;
     width: 10%;
-    height: 300px; /*altura da imagem*/
-    margin: 20px;
-    padding: 0% 35% 0% 35%; /* ate consigo reenquadrar a img, mas será que é assim mesmo?*/
+    height: 500px; /*altura da imagem*/
+    margin: 0px;
+    padding: 0% 25% 0% 25%; /* ate consigo reenquadrar a img, mas será que é assim mesmo?*/
 }
 
 
@@ -129,8 +143,8 @@ p{
 }
 
 #preco{
-    background-color: #b49e26;
-    padding: 5% 15% 8%;
+    background-color: #ffffff;
+    padding: 5% 10% 8%;
     color: #020f54;
 }
 
@@ -140,7 +154,17 @@ p{
 #footer{
     padding: 3% 15%;
     text-align: center;
-    background-color: #943333;
+    background-color: #0d6efd;
+}
+
+#footer p{ /*dentro de banner, estou mudando apenas h4*/
+    color: #ffffff;
+}
+
+.icon_footer{ /*vai estilizar os icones*/
+    color: #ffffff;
+    margin-bottom: 15px; /*espaçamento do icone até o texto*/
+    padding: 0%, 0%, 0%, 50%;
 }
 
 
