@@ -6,7 +6,7 @@ import React from 'react';
 function Menu(){ {/*fix-top a navbar fica fixa no topo */}
     return <nav className="navbar fix-top navbar-expand-md navbar-dark">
 
-    <div className="container">
+    <div className="container-fluid"> {/*o container centraliza e o fluid usa a tela toda*/}
             
         <a className="navbar-brand" href="#"> {/*como é js trocar class -> className */}
           <img src="Images/logo sena.png" alt="" height="28" /> {/*lembrand que tem que fechar a tag */}

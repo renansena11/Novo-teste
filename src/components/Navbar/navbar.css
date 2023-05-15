@@ -1,0 +1,38 @@
+/* ------------------------------NAVBAR---------------------- */
+
+/*em css . a gente customiza uma classse e o # customiza o nome (id)*/
+.navbar{
+    background-color: #0d6efd;
+}
+
+/*texto dentro do meu seach*/
+.btn-seach{    
+    color: #0d6efd;
+    
+}
+/*texto quando passa o mouse por cima do meu seach*/
+.btn-light:hover{
+    
+    color:#ffffff;
+    background-color:#0d6efd;
+    border-color:#f9fafb
+}
+/*texto dentro das divisões*/
+.btn-div{    
+    color: white;
+    
+}
+
+
+/*coloquei os itens mais centralizados*/
+.navbar-nav{
+    display:contents;
+}
+/*posição do meu botão de logo na navbar*/
+.navbar-brand{
+    padding-top:.3125rem;
+    padding-bottom:.3125rem;
+   
+    margin-right:2rem;
+    margin-left:0rem;
+}
