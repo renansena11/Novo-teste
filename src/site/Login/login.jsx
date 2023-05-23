@@ -9,7 +9,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 function Login() {
 
     const [email, setEmail] = useState('');  // vamos usar a ideia do setState
-    const [senha, setSenha] = useState('');
+    const [senha, setSenha] = useState(''); // set é a função que muda o estado de senha
     const [sucesso, setSucesso] = useState('');
 
     //vamos criar uma função de autenticação para comunicar com o back-end(firebase)
@@ -34,13 +34,13 @@ function Login() {
                
     }
 
-    function alterarEmail(event) {
-        setEmail(event.target.value); // estou pegando o evento onChange. target input e o valor é o que o usuário está digitando          
-    }
+    //function alterarEmail(event) {
+    //    setEmail(event.target.value); // estou pegando o evento onChange. target input e o valor é o que o usuário está digitando          
+    //}
 
-    function alterarSenha(event) {
-        setSenha(event.target.value);                 
-    }
+   // function alterarSenha(event) {
+   //     setSenha(event.target.value);                 
+   // }
 
 
     return <div className="d-flex align-itens-center text-center form-container">
@@ -48,14 +48,14 @@ function Login() {
     <form className="form-signin"> {/*form-container e form-signin são meus estilos */}
         <img className="mb-4" src="/Images/logo-small.png" alt="" width="150" height="40"/>
         <h1 className="h3 mb-3 fw-normal">Login</h1>
-        <h1 className="h3 mb-3 fw-normal">{email} - {senha}</h1>
+        {/*<h1 className="h3 mb-3 fw-normal">{email} - {senha}</h1> {/*so pra ver se está funcionando */}
 
         <div className="form-floating">
-            <input onChange={alterarEmail} type="email" className="form-control" id="floatingInput" placeholder="E-mail"/> {/*onChange = quando começo a digitar no campo de email vai para aquela função ali */}
+            <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="floatingInput" placeholder="E-mail"/> {/*onChange = quando começo a digitar no campo de email vai para aquela função ali */}
             <label for="floatingInput">E-mail</label>
         </div>
         <div className="form-floating">
-            <input onChange={alterarSenha} type="password" className="form-control" id="floatingPassword" placeholder="Senha"/>
+            <input onChange={(e) => setSenha(e.target.value)} type="password" className="form-control" id="floatingPassword" placeholder="Senha"/>
             <label for="floatingPassword">Senha</label>
         </div>
 
