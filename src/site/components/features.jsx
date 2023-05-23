@@ -3,7 +3,7 @@ import React from "react";
 //container mantem as margens
 //row: deve-se criar as colunas sempre dentro de uma row
 function Features() {
-    return <section id="features">
+    return <section id="features" className="wrapper-bg-f">
         <div className="container">
             <div className="row">
                 <div className="col-lg-4 feature-box"> {/*lg = desktoop md = tablet sm = celular || 4 pois vou dividir a tela em 3 partes */}

@@ -46,9 +46,8 @@ function NovaConta() {
 
     }
 
-    return <div className="d-flex align-itens-center text-center form-container">
-
-    <form className="form-signin"> {/*form-container e form-signin são meus estilos */}
+    return <div className="d-flex align-itens-center text-center form-container wrapper-bg">
+       <form className="form-signin"> {/*form-container e form-signin são meus estilos */}
         <img className="mb-4" src="/Images/logo-small.png" alt="" width="150" height="40"/>
         <h1 className="h3 mb-3 fw-normal">Criar Conta</h1>
         {/*<h1 className="h3 mb-3 fw-normal">{email} - {senha}</h1> {/*so pra ver se está funcionando */}
@@ -75,6 +74,7 @@ function NovaConta() {
         mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null
         }
         <p className="mt-5 mb-3 text-body-secondary">&copy; Desenvolvido por Renan Sena</p>
+        <a className="list-incline-item"><a href="https://github.com/renansena11" target="_blank"><i className="icon_new fa fa-github fa-2x"></i></a></a>
     </form>
 
 

@@ -89,11 +89,13 @@ p{
 #features{
     padding: 7% 5%;
     background-color: #ffec9f;
+    
 }
 
 .feature-box{
     text-align: center;
     padding: 5%; /*espaçamento entre itens das 3 colunas*/
+    position: relative;
 }
 
 .icon{ /*vai estilizar os icones*/
@@ -109,14 +111,34 @@ p{
     color: #000000;
 }
 
+.wrapper-bg-f{
+    position: relative;
+}
+    .wrapper-bg-f:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('https://images-americanas.b2w.io/produtos/4918038192/imagens/papel-de-parede-adesivo-textura-3d-efeitos-ondas-bege-3mx50cm/4918038192_1_large.jpg');
+    background-repeat: no-repeat;
+    /*background-position: 50% 0;*/
+    background-size: 100%;
+}
+
+
 
 /* TESTEMUNHOS */
 
 #testemunho{
-    background-color: #626262;
+    background-color: #000000;
     color: #ff0000;
     padding: 5% 0% 5% 0%;
     text-align: center;
+    position: relative;
 
     }
 .carousel-caption{
@@ -129,10 +151,34 @@ p{
 
 #testemunho img {
     border-radius: 50%;
+    opacity: 0.7;
     width: 10%;
     height: 500px; /*altura da imagem*/
     margin: 0px;
     padding: 0% 25% 0% 25%; /* ate consigo reenquadrar a img, mas será que é assim mesmo?*/
+}
+
+.wrapper-bg-t{
+
+    /*background-image: url(https://static.hoymiles.com/cfs/jpg/2101/22/1119770790804459520.jpg);
+    background-size: 100%;
+      */
+
+    position: relative;
+}
+    .wrapper-bg-t:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('https://www.galaxcommerce.com.br/sistema/upload/3344/produtos/papel-de-parede-textura-3d-auto-adesivo-rolo-48cm-x-3m_2022-04-07_20-51-48_0_139.jpg');
+    background-repeat: no-repeat;
+    /*background-position: 50% 0;*/
+    background-size: 100%;
 }
 
 

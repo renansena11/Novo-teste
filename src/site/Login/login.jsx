@@ -43,7 +43,7 @@ function Login() {
    // }
 
 
-    return <div className="d-flex align-itens-center text-center form-container">
+    return <div className="d-flex align-itens-center text-center form-container wrapper-bg">
 
     <form className="form-signin"> {/*form-container e form-signin são meus estilos */}
         <img className="mb-4" src="/Images/logo-small.png" alt="" width="150" height="40"/>
@@ -81,6 +81,7 @@ function Login() {
                 
             </div>
         <p className="mt-5 mb-3 text-body-secondary">&copy; Desenvolvido por Renan Sena</p>
+        <a className="list-incline-item"><a href="https://github.com/renansena11" target="_blank"><i className="icon_login fa fa-github fa-2x"></i></a></a>
     </form>
 
 

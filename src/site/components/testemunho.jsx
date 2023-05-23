@@ -3,7 +3,7 @@ import React from "react";
 //container mantem as margens
 //row: deve-se criar as colunas sempre dentro de uma row
 function Testemunho() {
-    return <section id="testemunho">
+    return <section id="testemunho" className="wrapper-bg-t">
         <div className="container">
            
             <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">

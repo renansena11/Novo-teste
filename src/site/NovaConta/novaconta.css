@@ -1,0 +1,33 @@
+.wrapper-bg{
+
+    /*background-image: url(https://img.myloview.com.br/quadros/textura-de-fundo-de-tecnologia-de-alta-tecnologia-placa-de-circuito-ilustracao-vetorial-700-101871221.jpg);
+    background-size: 100%;
+    opacity: 0.5;  
+*/
+    position: relative;
+}
+    .wrapper-bg:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('/public/Images/background_login.jpg');
+    background-repeat: no-repeat;
+    /*background-position: 50% 0;*/
+    background-size: 100%;
+}
+
+.form-signin{
+    position: relative;    /*fez toda a diferrença para apenas a imagem de fundo ficar opaca e
+    não o form*/
+}
+
+.icon_new{ /*vai estilizar os icones*/
+    color: #0d6efd;
+    margin-bottom: 15px; /*espaçamento do icone até o texto*/
+    padding: 0%, 0%, 0%, 50%;
+}
