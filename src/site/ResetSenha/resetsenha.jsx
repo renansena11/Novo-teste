@@ -3,7 +3,8 @@ import './resetsenha.css'
 import {Link} from 'react-router-dom';
 import '../Config/firebase'
 import 'firebase/auth';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
+
 
 
 function ResetSenha() {
@@ -13,6 +14,21 @@ function ResetSenha() {
 
     function recuperarSenha() {
         //vamos pedir para o firebase para redefinir a senha
+
+        const auth = getAuth();
+        sendPasswordResetEmail(auth, email)
+        .then((resultado) => {
+            // Password reset email sent!
+            // ..
+            setMensagem('');
+            alert('Email enviado com sucesso');
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+            setMensagem('Erro ao enviar email: ' + errorMessage);
+        });
 
         
 
