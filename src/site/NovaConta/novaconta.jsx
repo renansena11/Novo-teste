@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './novaconta.css'
-import {Link} from 'react-router-dom';
+import {Link,  Navigate} from 'react-router-dom';
 import '../Config/firebase'
 import 'firebase/auth';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -11,6 +11,7 @@ function NovaConta() {
     const [email, setEmail] = useState('');  // vamos usar a ideia do setState
     const [senha, setSenha] = useState(''); // set é a função que muda o estado de senha
     const [mensagem, setMensagem] = useState('');
+    const [sucesso, setSucesso] = useState('');
 
     function cadastrarUsuario() {
         //vamos fazer uma validação antes de conectar com o firebase
@@ -25,7 +26,7 @@ function NovaConta() {
         .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        alert('Usuário criado com sucesso');
+        setSucesso('Usuário criado com sucesso');
         // ...
         })
         .catch((error) => {
@@ -72,6 +73,12 @@ function NovaConta() {
         {
             // operador ternário (tipo if-else):   se sucesso === 1 ? 'faça isso' : 'faça aquilo'
         mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null
+        }
+        {
+        sucesso.length > 0 ? <div className="alert alert-success mt-2" role="alert">{sucesso}</div> : null
+        }
+        {
+        sucesso ==='Usuário criado com sucesso' ? <Navigate to="/login/home" />  : null
         }
         <p className="mt-5 mb-3 text-body-secondary">&copy; Desenvolvido por Renan Sena</p>
         <a className="list-incline-item"><a href="https://github.com/renansena11" target="_blank"><i className="icon_new fa fa-github fa-2x"></i></a></a>

@@ -1,0 +1,31 @@
+.titulo{
+    margin-top: -20px;;
+    margin-left: -40px;
+
+}
+
+.table{
+
+    background-color: #38b6ff;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    
+    
+}
+.feature-box{
+    text-align: center;
+    padding: 5%; /*espaçamento entre itens das 3 colunas*/
+    position: relative;
+}
+
+.icon{ /*vai estilizar os icones*/
+    color: #737373;
+    margin-bottom: 15px; /*espaçamento do icone até o texto*/
+}
+
+.historico{
+    margin-top: -120px;;
+
+
+}

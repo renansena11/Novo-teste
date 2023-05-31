@@ -10,7 +10,8 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 function ResetSenha() {
 
     const [email, setEmail] = useState('');  // vamos usar a ideia do setState
-    const [mensagem, setMensagem] = useState('Teste de erro');
+    const [mensagem, setMensagem] = useState('');
+    const [sucesso, setSucesso] = useState('');
 
     function recuperarSenha() {
         //vamos pedir para o firebase para redefinir a senha
@@ -21,13 +22,16 @@ function ResetSenha() {
             // Password reset email sent!
             // ..
             setMensagem('');
-            alert('Email enviado com sucesso');
+            setSucesso('Email enviado com sucesso');
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             // ..
-            setMensagem('Erro ao enviar email: ' + errorMessage);
+            if (error.message === 'Firebase: Error (auth/user-not-found).') {
+            setMensagem('Email não cadastrado');
+            }
+            
         });
 
         
@@ -57,6 +61,10 @@ function ResetSenha() {
             {
             mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null
             }
+            {
+            sucesso.length > 0 ? <div className="alert alert-success mt-2" role="alert">{sucesso}</div> : null
+            }
+
         <p className="mt-5 mb-3 text-body-secondary">&copy; Desenvolvido por Renan Sena</p>
         <a className="list-incline-item"><a href="https://github.com/renansena11" target="_blank"><i className="icon_reset fa fa-github fa-2x"></i></a></a>
     </form>

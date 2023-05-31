@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './login.css'
-import {Link} from 'react-router-dom';
+import {Link, Navigate} from 'react-router-dom';
 import '../Config/firebase'
 import 'firebase/auth';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
@@ -72,6 +72,9 @@ function Login() {
             {
                 // operador ternário (tipo if-else):   se sucesso === 1 ? 'faça isso' : 'faça aquilo'
             sucesso === 'N' ? <div className="alert alert-danger mt-2" role="alert"> E-mail e Senha Inválidos</div> : null
+            }
+            {
+            sucesso === 'S' ? <Navigate to="/login/home" />  : null
             }
             <div className="login-links mt-3"> {/*mt-3 = margin-top = 3 */}
                 {/*<a className="mx-3" href="#">Esqueci minha senha</a>
