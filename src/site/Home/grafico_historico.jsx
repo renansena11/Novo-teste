@@ -6,7 +6,7 @@ import './home.css'
 
 function Grafico_Historico() {
     return <div>
-    <VictoryBar/>
+    <h1>to procurando</h1>
     </div>
 }
 
