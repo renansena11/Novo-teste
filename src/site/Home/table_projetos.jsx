@@ -1,10 +1,31 @@
 import React from "react";
 import './home.css'
+import '../Config/firebase'
+import { useState, useEffect } from "react";
+import firebase from "../Config/firebase";
+import { collection, getDocs } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
+
 
 
 function Table_Projetos() {
+
+    const [projetos, setProjetos] = useState([]);  
+    let listaPro = [];
+/*
+    useEffect(function(){
+        firebase.firestore().collection('projetos').get().then(async function(resultado){
+          await resultado.docs.forEach(function(doc){
+            console.log(doc.id);
+          })  
+
+          setProjetos(listaPro);
+        })
+    }, []) // Executa essa função, sempre que os valores dentro dos [] forem alterados
+    // async e o await function espera a função terminar de ser executada para ir para outro processo
+*/
     return <div>
-                <table className="table table-hover ">
+                <table className="table table-hover table-bordered ">
                     <thead>
                         <tr>
                         <th scope="col">Id</th>
@@ -15,7 +36,7 @@ function Table_Projetos() {
                         
                         </tr>
                     </thead>
-                    <tbody className="table-group-divider">
+                    <tbody className="table-group-divider table-light">
                         <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
