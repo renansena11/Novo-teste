@@ -2,9 +2,8 @@ import React from "react";
 import './home.css'
 import '../Config/firebase'
 import { useState, useEffect } from "react";
-import firebase from "../Config/firebase";
-import { collection, getDocs } from "firebase/firestore";
-import { doc, getDoc } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
+
 
 
 
@@ -12,8 +11,10 @@ function Table_Projetos() {
 
     const [projetos, setProjetos] = useState([]);  
     let listaPro = [];
-/*
-    useEffect(function(){
+
+    
+
+ /*   useEffect(function(){
         firebase.firestore().collection('projetos').get().then(async function(resultado){
           await resultado.docs.forEach(function(doc){
             console.log(doc.id);
